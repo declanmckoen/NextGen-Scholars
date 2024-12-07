@@ -38,3 +38,4 @@ app.get("/", checkCurrUser, (req, res) => res.render("index"));
 app.use(userProfileRoutes);
 app.use(authRoutes);
 
+
