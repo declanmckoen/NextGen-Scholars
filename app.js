@@ -23,7 +23,8 @@ mongoose.connect(dbURI)
 // register view engine
 // Automatically looks in "views" folder
 app.set("view engine", "ejs");
-app.set("views", "src/views");
+//app.set("views", "src/views");
+app.set("views", path.join(__dirname, "src", "views"));
 
 
 // middleware and static files
