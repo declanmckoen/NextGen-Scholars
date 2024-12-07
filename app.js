@@ -14,8 +14,9 @@ const app = express();
 
 // connect to mongodb
 const dbURI = 'mongodb+srv://admin:nextgenscholars@nextgen-scholars.u2uev.mongodb.net/NextGen-Scholars?retryWrites=true&w=majority&appName=NextGen-Scholars';
+const PORT = process.env.PORT || 3000;
 mongoose.connect(dbURI)
-  .then((result) => app.listen(3000))
+  .then((result) => app.listen(PORT))
   .catch((err) => console.log(err));
 
 
